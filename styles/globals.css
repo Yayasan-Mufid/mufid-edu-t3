@@ -1,0 +1,67 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+/* 
+@import url('https://fonts.googleapis.com/css2?family=Noto+Naskh+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&family=Noto+Naskh+Arabic&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Kufi+Arabic:wght@300&family=Noto+Naskh+Arabic&family=Noto+Sans+Arabic&display=swap');
+ */
+blockquote.arabic-quranquote {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: xx-large;
+}
+blockquote.arabic-quranquote::before {
+  content: '\FD3E';
+}
+blockquote.arabic-quranquote::after {
+  content: '\FD3F';
+}
+
+blockquote.arabic-blockquote {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-size: large;
+}
+
+span.quran-inline {
+  font-family: 'Noto Naskh Arabic', serif;
+  font-size: 1.1em;
+}
+
+span.arabic-inline {
+  font-family: 'Noto Sans Arabic', sans-serif;
+  font-size: 1.1em;
+}
+
+.ql-snow .ql-arscript {
+  width: 98px;
+}
+
+span.ql-picker-item[data-label="AA"]::before {
+  content: attr(data-value)
+}
+
+.ql-arscript.ql-picker>span.ql-picker-label::before {
+  content: 'Pilih frase';
+}
+
+span.ql-picker-item[data-label="FF"]::before {
+  content: attr(data-value)
+}
+
+.ql-arformat.ql-picker>span.ql-picker-label::before {
+  content: 'Arabic format';
+  padding-right: 15px;
+}
